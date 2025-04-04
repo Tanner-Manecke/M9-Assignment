@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bowling Questions</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="container">
+        <header><h1> Bowling Questions</h1></header>
+            <nav></nav>
+            <section>
+            <article class="left"><form>
+                <input type="checkbox" id="Bowlingq1" name="Bowlingq1" value="Q1">
+                <label for="Bowlingq1"> I've been bolwing</label><br>
+                <input type="checkbox" id="Bowlingq2" name="Bowlingq2" value="Q2">
+                <label for="Bowlingq2"> I have my own ball</label><br>
+                <input type="checkbox" id="Bowlingq3" name="Bowlingq3" value="Q3">
+                <label for="Bowlingq3"> I have my own pair of shoes</label><br>
+                <input type="checkbox" id="Bowlingq4" name="Bowlingq4" value="Q4">
+                <label for="Bowlingq4"> I bowl often </label><br>
+                <input type="checkbox" id="Bowlingq5" name="Bowlingq5" value="Q5">
+                <label for="Bowlingq5"> I bowl on and off</label><br>
+                <input type="checkbox" id="Bowlingq6" name="Bowlingq6" value="Q6">
+                <label for="Bowlingq6"> I rarley bowl</label><br>
+
+                <canvas id="myCanvas" width="100" height="70" style="border:1px solid #05fa1a;">
+                    Sorry, your browser does not support canvas.
+                    </canvas>
+                    
+                    <script>
+                    // Create a canvas:
+                    const canvas = document.getElementById("myCanvas");
+                    const ctx = canvas.getContext("2d");
+                    
+                    // Define a new path:
+                    ctx.beginPath();
+                    
+                    // Define a start point
+                    ctx.moveTo(50,10);
+                    
+                    // Define points
+                    ctx.lineTo(90,50);
+                    ctx.lineTo(10,50);
+                    ctx.lineTo(50,10);
+                    
+                    // Draw it
+                    ctx.stroke();
+                    </script>
+                
+
+              </form></article>
+            <article class="right"><form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              
+                <input type="submit" value="Submit">
+              </form>
+            </article>
+            </section>
+            
+
+        </div>
+        <div id="container2">
+            <article class="left">
+                <audio controls>
+                    <source src="bowlingstrike.mp3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+            </article> 
+            <article class="right">
+                <ul>
+                    <li><a href="default.asp">Home</a></li>
+                    <li><a href="news.asp">News</a></li>
+                    <li><a href="contact.asp">Contact</a></li>
+                    <li><a href="about.asp">About</a></li>
+                  </ul>
+            </article>
+
+            
+            <footer>CopyRight of Tanner Manecke 2025</footer>
+        </div>
+       
+        
+        <script src="" async defer></script>
+    </body>
+</html>
